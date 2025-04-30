@@ -1,0 +1,28 @@
+package com.ecommerce.project.exception;
+
+public class ResourceNotFoundException extends RuntimeException {
+    String resourceName;
+    String field;
+    String fieldName;
+    Long fieldId;
+
+    public ResourceNotFoundException(String resourceName, String field, String fieldName) {
+        super(String.format("%s not found with %s :%s",resourceName,fieldName,field));
+        this.resourceName = resourceName;
+        this.field = field;
+        this.fieldName = fieldName;
+    }
+
+    public ResourceNotFoundException( String resourceName, Long fieldId, String field) {
+        super(String.format("%s not found with %s :%s",resourceName,field,fieldId));
+        this.resourceName = resourceName;
+        this.fieldId = fieldId;
+        this.field = field;
+    }
+
+    public ResourceNotFoundException() {
+
+    }
+
+
+}
