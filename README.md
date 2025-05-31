@@ -11,6 +11,16 @@ A delivery operations management system for Zomato, built with Spring Boot and R
 
 ## Setup Instructions
 
+### 1. Clone the Repository
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/zomato-ops-pro.git
+
+# Navigate to the project directory
+cd zomato-ops-pro
+```
+
 ### Backend Setup
 
 1. Navigate to the backend directory:
